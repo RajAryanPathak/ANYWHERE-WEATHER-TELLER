@@ -5,16 +5,19 @@ let cityarr =
 
 let abc =() =>
 {
+    // console.log('f line')
     inp = document.getElementById("search").value;
+    // console.log(inp);
+    inp = inp.toUpperCase();
     let arr = []
     // console.log(cityarray[0]['name']);
     
     // console.log();
-    console.log('a',typeof(inp[0]));
+    // console.log('a',typeof(inp[0]));
     if(typeof(inp[0])!='undefined')
     {
     let oned = cityarr[inp[0]];
-    console.log(typeof(cityarr));
+    // console.log(typeof(cityarr));
     let c =0;
     for (x of oned) {
         // console.log();

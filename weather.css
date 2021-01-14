@@ -76,16 +76,24 @@ body
     color: white;
     font-size: 15px;
     font-weight: bolder;
+    color: black;
 }
-
-.search1:focus
+.search1:focus:focus
 {
     outline: none;
+    color: white;
+}
+
+.search1:focus::placeholder
+{
+    outline: none;
+    color: white;
 }
 
 .search1:focus
 {
     width:50%;
+    color: white;
     transition: 1s;
 }
 
