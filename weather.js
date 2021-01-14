@@ -50,7 +50,7 @@ else if(val<35)
 {
     cmntv.innerHTML = "Sun quite High ☀️  ";
     document.body.style.backgroundImage="url('sunny.jpg')";
-    // m.style.backgroundColor="rgba(62, 65, 28, 0.6)";
+    m.style.backgroundColor="rgba(62, 65, 28, 0.6)";
     
 }
 else

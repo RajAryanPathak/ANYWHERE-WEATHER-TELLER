@@ -4,11 +4,18 @@ let fun1 =(inp,cityarray) =>
     // console.log(cityarray[0]['name']);
     
     // console.log();
-    for (x in cityarray) {
+    let oned = cityarray[inp[0]];
+    let c =0;
+    for (x of oned) {
         // console.log();
-        if(inp.toLowerCase() == cityarray[x]['name'].substring(0,inp.length).toLowerCase())
+        if(inp.toLowerCase() == x.substring(0,inp.length).toLowerCase())
         {
-                arr.push(cityarray[x]['name'])
+                arr.push(x)
+                c = c+1;
+                if(c==5)
+                {
+                    break;
+                }
         }
         
       }
@@ -17,7 +24,7 @@ let fun1 =(inp,cityarray) =>
     // console.log(c);
     // console.log(typeof(cityarray));
     
-    varr = arr.slice(0,5);
+    varr = arr
     // console.log(varr);
     for (cn in varr)
     {
@@ -36,9 +43,8 @@ let fun1 =(inp,cityarray) =>
 let sug = () =>
 {
     
-    fetch("city.list.json")
-    .then(x => x.json())
-    .then(cityarray => {fun1(document.getElementById("search").value,cityarray)})
+    let cityarray = accesscitylist();
+    fun1(document.getElementById("search").value,cityarray)
 
     
 }

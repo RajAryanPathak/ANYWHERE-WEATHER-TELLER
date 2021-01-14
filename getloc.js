@@ -17,7 +17,7 @@ else
 
 function showPosition(position) {
     // http://api.openweathermap.org/data/2.5/weather?lat=26.8467088&lon=80.9461592&appid=177c9476aefac49c90be072266533e42
-    fetch('https://api.openweathermap.org/data/2.5/weather?lat='+position.coords.latitude+'&lon='+position.coords.longitude+'&units=metric&appid=177c9476aefac49c90be072266533e42')
+    fetch('http://api.openweathermap.org/data/2.5/weather?lat='+position.coords.latitude+'&lon='+position.coords.longitude+'&units=metric&appid=177c9476aefac49c90be072266533e42')
     .then(response => response.json())
     .then(data => {
       fun4(data);
