@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>WEATHER APP</title>
+    
+    <link rel="stylesheet" href="weather.css">
+    <link rel="stylesheet" href="icon.css">
+
+    
+</head>
+<body>
+    <div class="con">
+    <div id="m"class="main">
+        <div class="searchbar">
+            <div id ="sugginp">
+                <input onkeydown="sug()" id="search" class="search" type="search" placeholder="Search Location Here" autocomplete="off">
+                <p>SEARCH HERE</p>
+                <div id="showsug">
+                    
+                        
+                    
+                </div>
+                </div>
+            
+            
+        </div>
+        <div class="showtem">
+                <p id="val"></p>
+                <p id="wt">HEY ALLOW YOUR BROWSER TO ACCESS LOCATION</p>
+                <div class="weatherIcon">
+                    <div id="wcond" class="sunny">
+                        <div class="inner"></div>
+                    </div>
+                </div>
+        </div>
+        <div class="cmnt">
+                <p id="cmntval"></p>
+        </div>
+        <div id="place">
+            <p id="placev"></p>
+
+        </div>
+    <div class="bottom">
+            <div class="sunrise">
+                <p><i class='fas fa-sun' style='font-size:48px;color:yellow'></i></p>
+                <p>SUN RISE</p>
+                <p id="srv"></p>
+            </div>
+            <div class="sunset">
+                
+                <p><i class='fas fa-cloud-sun' style='font-size:48px;color:orange'></i></p>
+                <p>SUN SET</p>
+                <p id="ssv"></p>
+            </div>
+    </div>
+    </div>
+</div>
+</body>
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+<script src="weather.js"></script>
+<script src="search.js"></script>
+<script src="fetchweather.js"></script>
+<script src="getloc.js"></script>
+<script src="utixtime.js"></script>
+
+
+
+</html>
