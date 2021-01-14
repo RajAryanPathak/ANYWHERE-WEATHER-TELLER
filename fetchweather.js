@@ -17,7 +17,7 @@ function fun4(data)
 function fun2(a)
 {
     
-    fetch('http://api.openweathermap.org/data/2.5/weather?q='+a.innerHTML+'&units=metric&appid=177c9476aefac49c90be072266533e42')
+    fetch('https://api.openweathermap.org/data/2.5/weather?q='+a.innerHTML+'&units=metric&appid=177c9476aefac49c90be072266533e42')
     .then(response => response.json())
     .then(data => {
       fun4(data);
