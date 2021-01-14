@@ -68,7 +68,7 @@ body
 .search1,.search1::placeholder
 {
     background-color: rgba(0, 0, 0, 1);
-    width: 1%;
+    width: 3%;
     height: 35px;
     border: transparent;
     border-radius: 20px;
@@ -78,22 +78,19 @@ body
     font-weight: bolder;
     color: black;
 }
-.search1:focus:focus
-{
-    outline: none;
-    color: white;
-}
-
 .search1:focus::placeholder
 {
     outline: none;
     color: white;
 }
 
+
+
 .search1:focus
 {
     width:50%;
     color: white;
+    outline: none;
     transition: 1s;
 }
 
